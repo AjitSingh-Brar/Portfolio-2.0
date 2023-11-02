@@ -29,7 +29,7 @@ function About({}: Props) {
         viewport={{ once: true }}
         src="https://i.pinimg.com/originals/00/d3/a9/00d3a9560bba545aa0578da752f4dfd0.jpg"
         className="mb-16 mt-36 md:mt-0 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover 
-        md:rounded-lg md:w-54 md:h-85 xl:w-[400px] xl:h-[500px]"
+        md:rounded-lg md:w-54 md:h-85 xl:w-[300px] xl:h-[400px]"
       />
 
       <div className="space-y-8 px-0 md:px-10">
