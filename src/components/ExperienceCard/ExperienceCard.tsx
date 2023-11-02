@@ -43,7 +43,8 @@ function ExperienceCard({}: Props) {
         </div>
         <p className="uppercase py-5 text-gray-300">Started work -- - Ended..</p>
 
-        <div className="h-[100px] overflow-y-scroll px-2">
+        <div className="h-[100px] overflow-y-scroll px-2 
+        scrollbar scrollbar-track-gray-400/30 scrollbar-thumb-[#ff8800]/80">
         <ul className="list-disc space-y-4 ml-5 text-base">
           <li>Summary points hello world helow bye bye</li>
           <li>Summary points</li>
