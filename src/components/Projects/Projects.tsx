@@ -16,7 +16,7 @@ function Projects({ projects }: Props) {
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row 
     max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
       <div
@@ -37,12 +37,13 @@ function Projects({ projects }: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="h-[210px] md:h-[250px] lg:h-[300px] mt-10"
               src={urlFor(project?.image).url()}
               alt=""
             />
 
             <div className="space-y-4 px-0 md:px-20 max-w-6xl">
-              <h4 className="text-3xl font-semibold text-center">
+              <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#ff8800]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>{" "}
@@ -52,7 +53,7 @@ function Projects({ projects }: Props) {
               <div className="flex items-center justify-center space-x-3">
                 {project?.technologies.map((technology) => (
                   <img
-                    className="w-10 h-10"
+                    className="w-8 h-8"
                     key={technology._id}
                     src={urlFor(technology.image).url()}
                     alt=""
@@ -60,14 +61,14 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className="text-center md:text-left text-lg">
+              <p className="text-center md:text-left text-base">
                 {project?.summary}
               </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#ff8800]/10 left-0 h-[325px] md:h-[375px] -skew-y-12" />
+      <div className="w-full absolute top-[30%] bg-[#ff8800]/10 left-0 h-[325px] md:h-[350px] -skew-y-12" />
     </motion.div>
   );
 }
